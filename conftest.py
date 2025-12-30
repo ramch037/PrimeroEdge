@@ -30,7 +30,7 @@ def setup_teardown_(request):
         driver = webdriver.Edge(options=options)
 
     driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
 
     web_url_env = request.config.getoption("--env")
     if web_url_env == "qa":
