@@ -7,7 +7,7 @@ driver = None
 
 def pytest_addoption(parser):
     parser.addoption( "--browser", action="store", default="chrome", help="Browser option: chrome, firefox, edge" )
-    parser.addoption("--env", action="store", default="qa", help="URL ENV option: qa, dev, prod")
+    parser.addoption("--env", action="store", default="qa", help="URL Environment option: qa, dev, prod")
 
 @pytest.fixture
 def setup_teardown_(request):
