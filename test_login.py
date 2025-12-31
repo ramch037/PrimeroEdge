@@ -1,7 +1,10 @@
+import pytest
+
 from page_dashboard import DashBoardPage
 from page_login import LoginPage
 from data_login import test_login_data
 
+@pytest.mark.regression
 def test_user_login_valid_credentials(setup_teardown_):
     driver = setup_teardown_
     login_page = LoginPage(driver)
